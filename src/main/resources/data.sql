@@ -1,0 +1,18 @@
+INSERT INTO receita (id, nome, descricao, ingredientes) VALUES
+(1, 'Macarrão ao Alho e Óleo', 'Receita simples e rápida, perfeita para quando a despensa está quase vazia.', ARRAY['macarrão', 'alho', 'óleo', 'sal', 'pimenta-do-reino']),
+(2, 'Panqueca de Banana', 'Panqueca saudável sem açúcar, perfeita para o café da manhã.', ARRAY['banana', 'ovo', 'aveia', 'canela']),
+(3, 'Omelete de Legumes', 'Omelete leve e nutritivo com legumes variados.', ARRAY['ovo', 'cenoura', 'tomate', 'cebola', 'sal', 'pimenta']),
+(4, 'Salada de Grão-de-Bico', 'Salada refrescante e rica em proteínas vegetais.', ARRAY['grão-de-bico', 'tomate', 'cebola roxa', 'azeite', 'limão', 'sal']),
+(5, 'Arroz de Forno com Sobras', 'Receita ótima para reaproveitar ingredientes da geladeira.', ARRAY['arroz', 'frango desfiado', 'milho', 'ervilha', 'molho de tomate', 'queijo ralado']),
+(6, 'Tapioca com Queijo e Tomate', 'Opção rápida e leve para café da manhã ou lanche da tarde.', ARRAY['goma de tapioca', 'queijo', 'tomate', 'orégano', 'sal']),
+(7, 'Sopa de Abóbora com Gengibre', 'Sopa cremosa e reconfortante, ótima para dias frios.', ARRAY['abóbora', 'cebola', 'alho', 'gengibre', 'azeite', 'sal', 'água']),
+(8, 'Wrap Integral de Frango', 'Refeição leve e prática, ideal para levar na marmita.', ARRAY['tortilha integral', 'frango desfiado', 'alface', 'tomate', 'maionese light']),
+(9, 'Bolinho de Chuva', 'Clássico da vovó, perfeito para um café da tarde com chuva.', ARRAY['farinha de trigo', 'açúcar', 'leite', 'ovo', 'fermento', 'canela', 'óleo para fritar']),
+(10, 'Guacamole Rápido', 'Receita mexicana simples, ótima como entrada ou acompanhamento.', ARRAY['abacate', 'tomate', 'cebola', 'limão', 'sal', 'coentro']),
+(11, 'Pizza de Frigideira', 'Pizza caseira fácil e rápida feita na frigideira.', ARRAY['farinha de trigo', 'fermento químico', 'água', 'sal', 'molho de tomate', 'queijo', 'orégano']),
+(12, 'Escondidinho de Carne Moída', 'Prato completo com purê e carne, ideal para o almoço.', ARRAY['batata', 'carne moída', 'leite', 'manteiga', 'sal', 'queijo ralado']),
+(13, 'Bolo de Caneca de Chocolate', 'Sobremesa rápida feita no micro-ondas em poucos minutos.', ARRAY['farinha de trigo', 'açúcar', 'leite', 'ovo', 'chocolate em pó', 'fermento', 'óleo']),
+(14, 'Homus', 'Pasta de grão-de-bico cremosa e temperada, servida como entrada ou acompanhamento.', ARRAY['grão-de-bico', 'tahine', 'alho', 'limão', 'azeite', 'sal']),
+(15, 'Esfiha de Carne', 'Tradicional salgado árabe recheado com carne temperada.', ARRAY['farinha de trigo', 'fermento biológico', 'carne moída', 'cebola', 'limão', 'sal', 'pimenta']),
+(16, 'Falafel', 'Bolinho frito de grão-de-bico e ervas, muito consumido no Oriente Médio.', ARRAY['grão-de-bico', 'salsinha', 'cebola', 'alho', 'coentro', 'cominho', 'sal', 'fermento']),
+(17, 'Arroz com Lentilhas (Mujaddara)', 'Prato simples e saboroso feito com arroz, lentilhas e cebola caramelizada.', ARRAY['arroz', 'lentilha', 'cebola', 'azeite', 'sal', 'pimenta']);
