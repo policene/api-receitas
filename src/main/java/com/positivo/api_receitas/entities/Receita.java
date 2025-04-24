@@ -1,26 +1,43 @@
 package com.positivo.api_receitas.entities;
 
+import io.hypersistence.utils.hibernate.type.array.ListArrayType;
+import jakarta.persistence.*;
+import org.hibernate.annotations.Type;
+
 import java.util.List;
 
+@Entity
+@Table(name = "tb_receitas")
 public class Receita {
 
-    Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Long id;
     String nome;
     String descricao;
+    @Type(ListArrayType.class)
+    @Column(
+        name = "ingredientes",
+        columnDefinition = "text[]"
+    )
     List<String> ingredientes;
 
-    public Receita(Integer id, String nome, String descricao, List<String> ingredientes) {
+    public Receita(Long id, String nome, String descricao, List<String> ingredientes) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.ingredientes = ingredientes;
     }
 
-    public Integer getId() {
+    public Receita() {
+
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -5,6 +5,7 @@ import com.positivo.api_receitas.repository.ReceitaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ReceitaService {
@@ -16,11 +17,11 @@ public class ReceitaService {
     }
 
     public List<Receita> getAll(){
-        return repository.getAll();
+        return repository.findAll();
     }
 
-    public Receita getById (int id) {
-        return repository.getById(id);
+    public Optional<Receita> getById (Long id) {
+        return repository.findById(id);
     }
 
 }

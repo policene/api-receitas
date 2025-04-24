@@ -26,8 +26,8 @@ public class ReceitaController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Receita> getById (@PathVariable int id) {
-        Receita receita = service.getById(id);
+    public ResponseEntity<Receita> getById (@PathVariable Long id) {
+        Receita receita = service.getById(id).orElse(null);
         return ResponseEntity.ok(receita);
     }
 
