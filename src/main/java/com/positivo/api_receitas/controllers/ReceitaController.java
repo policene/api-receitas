@@ -1,5 +1,6 @@
 package com.positivo.api_receitas.controllers;
 
+import com.positivo.api_receitas.dto.IngredientesRequestDTO;
 import com.positivo.api_receitas.entities.Receita;
 import com.positivo.api_receitas.services.ReceitaService;
 import org.springframework.http.ResponseEntity;
@@ -27,8 +28,14 @@ public class ReceitaController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Receita> getById (@PathVariable Long id) {
-        Receita receita = service.getById(id).orElse(null);
-        return ResponseEntity.ok(receita);
+        Optional<Receita> receita = service.getById(id);
+        return receita.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/buscar-por-ingredientes")
+    public ResponseEntity<List<Receita>> busca(@RequestBody IngredientesRequestDTO request) {
+        List<Receita> receitas = service.buscarPorIngredientes(request.ingredientes());
+        return ResponseEntity.ok(receitas);
     }
 
 }

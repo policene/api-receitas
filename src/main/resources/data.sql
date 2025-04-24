@@ -15,4 +15,17 @@ INSERT INTO receita (id, nome, descricao, ingredientes) VALUES
 (14, 'Homus', 'Pasta de grão-de-bico cremosa e temperada, servida como entrada ou acompanhamento.', ARRAY['grão-de-bico', 'tahine', 'alho', 'limão', 'azeite', 'sal']),
 (15, 'Esfiha de Carne', 'Tradicional salgado árabe recheado com carne temperada.', ARRAY['farinha de trigo', 'fermento biológico', 'carne moída', 'cebola', 'limão', 'sal', 'pimenta']),
 (16, 'Falafel', 'Bolinho frito de grão-de-bico e ervas, muito consumido no Oriente Médio.', ARRAY['grão-de-bico', 'salsinha', 'cebola', 'alho', 'coentro', 'cominho', 'sal', 'fermento']),
-(17, 'Arroz com Lentilhas (Mujaddara)', 'Prato simples e saboroso feito com arroz, lentilhas e cebola caramelizada.', ARRAY['arroz', 'lentilha', 'cebola', 'azeite', 'sal', 'pimenta']);
+(17, 'Arroz com Lentilhas (Mujaddara)', 'Prato simples e saboroso feito com arroz, lentilhas e cebola caramelizada.', ARRAY['arroz', 'lentilha', 'cebola', 'azeite', 'sal', 'pimenta']),
+(18, 'Frango com Limão e Alho', 'Frango suculento marinado em limão e alho, assado no forno.', ARRAY['frango', 'limão', 'alho', 'azeite', 'sal', 'pimenta-do-reino']),
+(19, 'Salada de Quinoa com Legumes', 'Salada leve com quinoa, legumes frescos e tempero cítrico.', ARRAY['quinoa', 'tomate', 'pepino', 'cebola roxa', 'limão', 'azeite', 'sal']),
+(20, 'Omelete de Tomate e Cebola', 'Omelete simples com tomate e cebola caramelizada.', ARRAY['ovo', 'tomate', 'cebola', 'sal', 'pimenta', 'azeite']),
+(21, 'Bolo de Laranja', 'Bolo úmido e aromático com suco de laranja natural.', ARRAY['farinha de trigo', 'açúcar', 'ovo', 'laranja', 'óleo', 'fermento']),
+(22, 'Cuscuz Nordestino', 'Cuscuz tradicional acompanhado de queijo e tomate.', ARRAY['farinha de milho', 'queijo', 'tomate', 'cebola', 'sal', 'água']),
+(23, 'Risoto de Frango com Queijo', 'Risoto cremoso com frango desfiado e queijo derretido.', ARRAY['arroz arbóreo', 'frango', 'queijo', 'cebola', 'alho', 'caldo de galinha', 'vinho branco']),
+(24, 'Torta Salgada de Liquidificador', 'Torta prática com recheio de legumes e queijo.', ARRAY['farinha de trigo', 'ovo', 'leite', 'queijo', 'tomate', 'cebola', 'fermento']),
+(25, 'Sopa de Lentilha', 'Sopa reconfortante com lentilhas e legumes.', ARRAY['lentilha', 'cebola', 'alho', 'cenoura', 'tomate', 'azeite', 'sal']),
+(26, 'Pão de Queijo Caseiro', 'Clássico mineiro feito com polvilho e queijo.', ARRAY['polvilho azedo', 'queijo meia cura', 'ovo', 'leite', 'óleo', 'sal']),
+(27, 'Frango Xadrez Vegetariano', 'Versão vegetariana com tofu e legumes salteados.', ARRAY['tofu', 'pimentão', 'cebola', 'alho', 'molho shoyu', 'gengibre', 'óleo']),
+(28, 'Bolinho de Arroz com Queijo', 'Bolinho crocante feito com sobras de arroz.', ARRAY['arroz', 'queijo', 'ovo', 'farinha de trigo', 'cebola', 'sal']),
+(29, 'Panqueca Americana', 'Panqueca fofinha para café da manhã com mel ou frutas.', ARRAY['farinha de trigo', 'ovo', 'leite', 'açúcar', 'fermento', 'sal']),
+(30, 'Brigadeiro de Micro-ondas', 'Brigadeiro rápido feito em 3 minutos.', ARRAY['leite condensado', 'chocolate em pó', 'manteiga', 'granulado']);
