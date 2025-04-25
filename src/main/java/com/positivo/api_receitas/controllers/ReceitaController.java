@@ -33,7 +33,7 @@ public class ReceitaController {
     }
 
     @GetMapping("/buscar-por-ingredientes")
-    public ResponseEntity<List<Receita>> busca(@RequestBody IngredientesRequestDTO request) {
+    public ResponseEntity<List<Receita>> search(@RequestBody IngredientesRequestDTO request) {
         List<Receita> receitas = service.buscarPorIngredientes(request.ingredientes());
         return ResponseEntity.ok(receitas);
     }
