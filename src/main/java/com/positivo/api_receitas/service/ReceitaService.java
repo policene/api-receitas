@@ -1,7 +1,6 @@
-package com.positivo.api_receitas.services;
+package com.positivo.api_receitas.service;
 
-import com.positivo.api_receitas.dto.IngredientesRequestDTO;
-import com.positivo.api_receitas.entities.Receita;
+import com.positivo.api_receitas.entity.Receita;
 import com.positivo.api_receitas.repository.ReceitaRepository;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

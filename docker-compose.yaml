@@ -10,7 +10,7 @@ services:
     ports:
       - "5433:5432"
     networks:
-      - receitas-network
+      - refeicoes-network
 
   receitas-cache:
     image: redis:7
@@ -18,7 +18,7 @@ services:
     ports:
       - "6379:6379"
     networks:
-      - receitas-network
+      - refeicoes-network
 
   api-receitas:
     build:
@@ -31,11 +31,12 @@ services:
       SPRING_DATASOURCE_USERNAME: user
       SPRING_DATASOURCE_PASSWORD: password
     networks:
-      - receitas-network
+      - refeicoes-network
     depends_on:
       - receitas-database
       - receitas-cache
 
 networks:
-  receitas-network:
-    driver: bridge
+  refeicoes-network:
+    external: true
+

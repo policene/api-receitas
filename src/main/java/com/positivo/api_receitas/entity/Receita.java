@@ -1,4 +1,4 @@
-package com.positivo.api_receitas.entities;
+package com.positivo.api_receitas.entity;
 
 import io.hypersistence.utils.hibernate.type.array.ListArrayType;
 import jakarta.persistence.*;
